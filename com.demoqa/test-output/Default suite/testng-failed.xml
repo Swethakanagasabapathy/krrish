@@ -6,11 +6,15 @@
       <class name="execution.Runner">
         <methods>
           <include name="beforeClass"/>
+          <include name="testCase5"/>
+          <include name="testCase2"/>
           <include name="testCase3"/>
           <include name="beforeMethod"/>
           <include name="afterTest"/>
+          <include name="testCase4"/>
           <include name="afterClass"/>
           <include name="beforeSuite"/>
+          <include name="testCase1"/>
           <include name="afterSuite"/>
           <include name="beforeTest"/>
           <include name="afterMethod"/>

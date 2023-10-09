@@ -22,7 +22,7 @@ import pageModule.BookStoreApplicationPage;
 import pageModule.FormPage;
 import pageModule.InteractionsPage;
 import pageModule.WidgetsPage;
-import utill.ReadExcel;
+
 import webElement.BookStoreApplication_xpath;
 import webElement.Interactions_xpath;
 import webElement.Widgets_xpath;
@@ -35,11 +35,11 @@ public class Runner extends Drivermanager {
 	InteractionsPage inter = new InteractionsPage();
 	BookStoreApplicationPage bookxp = new BookStoreApplicationPage();	
 
-	@DataProvider(name = "excelData")
-	public Object[][] readExcel() throws InvalidFormatException, IOException {
-		return ReadExcel.readExcel(System.getProperty("user.dir") + "/src/test/resources/dataSheet/PractiseForm.xlsx",
-				"PractiseForm");
-	}
+	//@DataProvider(name = "excelData")
+	//public Object[][] readExcel() throws InvalidFormatException, IOException {
+		//return ReadExcel.readExcel(System.getProperty("user.dir") + "/src/test/resources/dataSheet/PractiseForm.xlsx",
+			//	"PractiseForm");
+	//}
 
 	@Test(priority = 1, enabled = true, dataProvider = "excelData")
 	public void testCase1(String firstname, String lastname, String mobilenumber) throws InterruptedException {

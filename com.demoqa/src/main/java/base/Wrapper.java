@@ -11,7 +11,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.Wait;
 
-public class Wrapper {
+public class Wrapper  {
 ////Fluent Wait method
 	
 	public static WebElement fluentWait(WebDriver driver, final WebElement element) {
